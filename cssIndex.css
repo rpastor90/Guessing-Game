@@ -1,0 +1,20 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("images/disarmBomb.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  min-height: 500px;
+}
+
+textarea {
+  text-align: center;
+  opacity: 0.9;
+}
+
+.Options {
+  text-align: center;
+}
