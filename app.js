@@ -76,7 +76,7 @@ $(document).ready(function() {
   var submission = function () {
     hidden();
     if (validGuess()) {
-      if (count < 4) {
+      if (count <= 4) {
         $('.storeGuesses').append('<p>' + guess + '</p>');
         checkForAnswer();
       } else {
