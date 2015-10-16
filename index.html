@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Guessing Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="cssIndex.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="cssIndex.css" type="text/css" rel="stylesheet"/>
+
+    
   </head>
 
   <body>
-    <h1>Defuse the Bomb</h1>
+    <h1>Guessing Game</h1>
+    </br>
+
+    <div id="jumbo" class="jumbotron container-fluid" align="center">
+      <!-- <textarea id="guessArea" name="guess" cols="50" rows="15">Guess a number between 1-100 to Defuse the Bomb... 
+      </textarea> -->
+    <p>
+      <label>Guess a number between 1 - 100</label>
+    </p>
+    <p>
+      <input type="number" class="Guess" value="0" />
+    </p>
+    
+    <div class="responses">
+      <p class="correct">That's right! You Win!!</p>
+      <p class="closeUp">You're so close! Go up!</p>
+      <p class="closeDown">You're so close! Go down!</p>
+      <p class="warmUp">You're warm, Go up!</p>
+      <p class="warmDown">You're warm, Go down!</p>
+      <p class="coldUp">Cold! Go up!</p>
+      <p class="coldDown">Cold! Go down!</p>
+      <p class="farUp">Freezing! Go up!</p>
+      <p class="farDown">Freezing! Go down!</p>
+      <p class="warmerUp">Getting warmer, go up!</p>
+      <p class="warmerDown">Getting warmer, go down!</p>
+      <p class="colderUp">Getting colder, go up!</p>
+      <p class="colderDown">Getting colder, go down!</p>
+      <p class="goodTry">Good Try!!</p>
+    </div>
+
 
     </br>
 
-    <div class="jumbotron container-fluid" align="center">
-      <textarea name="guess" cols="50" rows="15">Guess a number between 1-100 to Defuse the Bomb... 
-      </textarea>
+      <button id="button1" class="btn center btn-primary">Submit Your Guess</button>
 
     </br>
-
-      <div class="btn center btn-danger">Submit Your Guess</div>
-
     </br>
 
       <div class="container">
           <div class="btn-group inline center">
-            <div class="btn btn-warning">Play Again</div>
-            <div class="btn btn-success">Give Me A Hint</div>
+            <button id="button2" class="btn btn-primary" type="button">Play Again</button>
+            <button id="button3" class="btn btn-primary">Give Me A Hint</button>
           </div>
       </div>
+    <div class="storeGuesses">
     </div>
+ 
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script> 
 
   </body>
 </html>

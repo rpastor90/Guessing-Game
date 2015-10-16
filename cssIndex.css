@@ -4,17 +4,33 @@ h1 {
 }
 
 .jumbotron {
-  background-image: url("images/disarmBomb.jpg");
-  background-repeat: repeat-x;
-  background-position: center;
-  min-height: 500px;
+  background-image: url("images/questions.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: transparent;
+  background-size: 35%;
+  min-height: 575px;
 }
 
-textarea {
+label {
+  color: blue;
+  font-size: 50;
+}
+
+input {
+  min-height: 100px;
   text-align: center;
   opacity: 0.9;
 }
 
-.Options {
-  text-align: center;
+.responses p {
+  font-size: 50;
+  font-weight: bold;
+  color: red;
 }
+
+.winner {
+  background-image: url('images/winner.jpg');
+}
+
+
