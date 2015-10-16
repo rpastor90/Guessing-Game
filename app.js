@@ -55,6 +55,12 @@ $(document).ready(function() {
       } else if (difference < -45) {
           $('.farDown').show();
       }
+    } else if (count === 4) {
+      $('.storeGuesses').find('p').remove();
+      $('.storeGuesses').append('<p>Press "Play Again" to start over.</p>').show();
+        if (randomNumber !== guess) {
+          $('.goodTry').show();
+        }
     } else {
       if (difference > 45) {
           $('.farUp').show();
